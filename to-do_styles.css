@@ -1,0 +1,123 @@
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    #todo-container {
+      width: 600px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+
+    #todo-header {
+      background-color: #FF9933; /* Saffron color */
+      color: white;
+      padding: 20px 0; /* Increased padding for more space */
+      margin-bottom: 20px; /* Increased margin-bottom for more space */
+      text-align: center;
+      font-size: 40px;
+      font-weight: bold;
+      border-bottom: 1px solid #ccc;
+    }
+
+    #task-input,
+    #completion-time,
+    #add-task-button {
+      width: calc(40% - 15px);
+      margin-bottom: 10px;
+    }
+
+    #task-input,
+    #completion-time {
+      width: calc(40% - 15px); /* Contribution of 2/5th */
+    }
+
+    #add-task-button {
+      width: calc(20% - 10px); /* Contribution of 1/5th */
+      background-color: green;
+      color: white;
+      cursor: pointer;
+      border: none;
+      padding: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    #task-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px; /* Added margin-top for space */
+    }
+
+    #task-table th, #task-table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    #task-table th {
+      background-color: #f2f2f2;
+    }
+
+    .task-item.waiting td {
+      background-color: #ffeb3b; /* Yellow color for waiting tasks */
+    }
+
+    .task-item.completed td {
+      background-color: #d4f7dc;
+      text-decoration: line-through;
+      color: #888;
+    }
+
+    .completion-time {
+      font-size: 12px;
+      color: #777;
+    }
+
+    .repeat-button {
+      background-color: #2196F3;
+      color: white;
+      cursor: pointer;
+      border: none;
+      padding: 5px;
+      font-size: 14px;
+      border-radius: 3px;
+    }
+
+    #current-time {
+      text-align: center;
+      font-size: 12px;
+      color: #777;
+    }
+
+    #date-time {
+      text-align: center;
+      font-size: 12px;
+      color: #777;
+      margin-top: 10px; /* Adjusted margin-top */
+    }
+
+    #todo-footer {
+      text-align: center;
+      padding: 20px 0; /* Increased padding for more space */
+      font-size: 21px;
+      font-weight: bold;
+      color: #fff; /* Text color */
+      background-color: #138808; /* Green color */
+    }
+
+    #about-me-link {
+      display: block;
+      text-align: center;
+      margin-top: 20px; /* Added margin-top for space */
+      font-size: 18px;
+    }
